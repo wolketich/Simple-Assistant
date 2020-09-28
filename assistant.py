@@ -7,3 +7,9 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty("voices")
 engine.setProperty('voice',voices[1].id)
 
+
+# To convdert text into voice
+def speak(audio):
+    engine.say(audio)
+    print(audio)
+    engine.runAndWait()
