@@ -28,3 +28,8 @@ def takecommand():
     except Exception:
         speak("Can you please say that again ... ")
         return 'none'
+    return query
+
+# To wish
+def wish():
+    hour = int(datetime.datetime.now().hour)
