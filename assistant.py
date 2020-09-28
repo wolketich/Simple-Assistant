@@ -38,3 +38,8 @@ def wish():
     elif hour>12 and hour<16:
         speak("Good afternoon Sir")
     elif hour>16 and hour<22:
+        speak("Good evening Sir")
+    speak("I am jarvis, Please tell me how can i help you !")
+
+
+if __name__ == "__main__":
