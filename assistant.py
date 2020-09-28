@@ -18,3 +18,8 @@ def speak(audio):
 def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 1
+        audio = r.listen(source,timeout=2,phrase_time_limit=5)
+        
+    try:
