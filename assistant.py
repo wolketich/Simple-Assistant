@@ -23,3 +23,8 @@ def takecommand():
         audio = r.listen(source,timeout=2,phrase_time_limit=5)
         
     try:
+        print("Recognizing...")
+        query = r.recognize_google(audio,language='en-in')
+    except Exception:
+        speak("Can you please say that again ... ")
+        return 'none'
