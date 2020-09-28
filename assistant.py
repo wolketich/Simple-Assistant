@@ -58,3 +58,7 @@ if __name__ == "__main__":
 
         elif "play music" in query:
             music_dir = 'D:\\Songs'
+            songs = os.listdir(music_dir)
+            rd = random.choice(songs)
+            os.startfile(os.path.join(music_dir,rd))
+            speak("Playing Music")
