@@ -53,3 +53,8 @@ if __name__ == "__main__":
             speak("Please wait ! While I am opening notepad for you!")
 
         elif "open cmd" in query:
+            os.system('start cmd')
+            speak("Opening Command Promte")
+
+        elif "play music" in query:
+            music_dir = 'D:\\Songs'
