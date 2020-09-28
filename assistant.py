@@ -62,3 +62,9 @@ if __name__ == "__main__":
             rd = random.choice(songs)
             os.startfile(os.path.join(music_dir,rd))
             speak("Playing Music")
+
+        elif "ip address" in query:
+            ip = requests.get("https://api.ipify.org").text
+            speak(f"Your Ip address is {ip}")
+
+        elif 'wikipedia' in query:
