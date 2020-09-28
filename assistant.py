@@ -33,3 +33,8 @@ def takecommand():
 # To wish
 def wish():
     hour = int(datetime.datetime.now().hour)
+    if hour >=0 and hour<=12:
+        speak("Good morning Sir")
+    elif hour>12 and hour<16:
+        speak("Good afternoon Sir")
+    elif hour>16 and hour<22:
