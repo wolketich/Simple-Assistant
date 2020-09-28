@@ -13,3 +13,8 @@ def speak(audio):
     engine.say(audio)
     print(audio)
     engine.runAndWait()
+
+# To convert voice into text
+def takecommand():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
