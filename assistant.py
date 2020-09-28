@@ -43,3 +43,8 @@ def wish():
 
 
 if __name__ == "__main__":
+    wish()
+    if 1:
+        query = takecommand().lower()
+
+        if 'open notepad' in query:
