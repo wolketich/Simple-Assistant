@@ -48,3 +48,8 @@ if __name__ == "__main__":
         query = takecommand().lower()
 
         if 'open notepad' in query:
+            npath = 'C:\\Windows\\System32\\notepad.exe'
+            os.startfile(npath)
+            speak("Please wait ! While I am opening notepad for you!")
+
+        elif "open cmd" in query:
