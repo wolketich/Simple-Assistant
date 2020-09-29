@@ -78,3 +78,8 @@ if __name__ == "__main__":
 
         elif "open instagram" in query:
             webbrowser.open('www.instagram.com/')
+
+        elif "open facebook" in query:
+            webbrowser.open('www.facebook.com/')
+
+        elif "open twitter" in query:
