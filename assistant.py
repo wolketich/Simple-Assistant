@@ -73,3 +73,8 @@ if __name__ == "__main__":
             results = wikipedia.summary(query,sentences=5)
             speak(f"according to wikipedia {results}")
         
+        elif "open youtube" in query:
+            webbrowser.open('www.youtube.com/')
+
+        elif "open instagram" in query:
+            webbrowser.open('www.instagram.com/')
