@@ -88,3 +88,7 @@ if __name__ == "__main__":
         elif "open google" in query:
             speak('Sir what should i search on google ! ')
             varg = takecommand().lower()
+            webbrowser.open(varg)
+
+        # elif 'send message' in query:
+        #     pywhatkit.sendwhatmsg("+919988776655",'Hello I am Jarvis ! How are you Sir ?',18,33,10,True)
