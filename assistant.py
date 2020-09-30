@@ -83,3 +83,8 @@ if __name__ == "__main__":
             webbrowser.open('www.facebook.com/')
 
         elif "open twitter" in query:
+            webbrowser.open('www.twitter.com/')
+
+        elif "open google" in query:
+            speak('Sir what should i search on google ! ')
+            varg = takecommand().lower()
