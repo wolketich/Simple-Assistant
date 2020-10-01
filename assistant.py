@@ -97,3 +97,24 @@ if __name__ == "__main__":
         #     speak("Which song would you like to play on youtube ? ")
         #     song = takecommand().lower()
         #     pywhatkit.playonyt(song)
+
+        # elif 'play video' in query:
+        #     speak("Which video would you like to play on youtube ? ")
+        #     vsong = takecommand().lower()
+        #     pywhatkit.playonyt(vsong)
+
+
+        elif 'nothing' in query or 'abort' in query or 'stop' in query:
+            speak('okay')
+            speak('Bye Sir, have a good day.')
+            sys.exit()
+           
+        elif 'hello' in query:
+            speak('Hello Sir')
+
+        elif 'bye' in query:
+            speak('Bye Sir, have a good day.')
+            sys.exit()
+
+        
+        elif "what\'s up" in query or 'how are you' in query:
